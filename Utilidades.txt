@@ -1,0 +1,26 @@
+#Operadores
+    -> Operadores Aritiméticos
+        + -> Adição
+        - -> Subtração
+        * -> Multiplição
+        / -> Divisão
+    -> Operadores 
+        == -> Comparação(Igualdade)
+        === -> Comparação(Estritamente igual)
+        !== -> Comparação(Estritamente diferente)
+        != -> Diferente
+        = -> Atribuição
+        ++ -> Increcemento
+        -- -> Decremento
+    -> Operadores Lógicos
+        && -> AND
+        || -> OR
+        ! -> NOT
+#Métodos
+    toFixed() -> Quantidade de casas decimais
+    split() -> Separa strings
+#Arrays
+    .pop() -> Exclui o ultimo item da lista
+    .shift() -> Exclui o primeiro item da lista
+    .unshift(valor) -> Insere "valor" no inicio da lista
+    .push(valor) ->  Insere "valor" no final da lista
