@@ -1,0 +1,14 @@
+{
+  "name": "gamebabel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gameBabel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JuniorFarias\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[j\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[f",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
