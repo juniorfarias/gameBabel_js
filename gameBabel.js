@@ -46,4 +46,5 @@ const reset = function () {
     hero.y = canvas.height / 2
 
     monster.x = 32 + (Math.random() * (canvas.width - 64))
+    monster.y = 32 + (Math.random() * (canvas.width - 64))
 }
