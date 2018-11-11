@@ -24,7 +24,7 @@ const monsterImage = new Image()
 monsterImage.onload = function () {
     monsterReady = true
 }
-monterImage.src = 'imagens/monster.png'
+monsterImage.src = 'imagens/monster.png'
 
 const hero = {
     speed: 256
@@ -34,6 +34,7 @@ let monstersCaught = 0
 
 const keysDown = {}
 window.addEventListener('keydown', function (e) {
+    console.log(e)
     keysDown[e.keyCode] = true
 }, false)
 
@@ -47,4 +48,27 @@ const reset = function () {
 
     monster.x = 32 + (Math.random() * (canvas.width - 64))
     monster.y = 32 + (Math.random() * (canvas.width - 64))
+}
+
+const update = function (modifier) {
+    if (38 in keysDown) {//Cima
+        hero.y -= hero.speed * modifier
+    }
+    if (40 in keysDown) {//Baixo
+        hero.y += hero.speed * modifier
+    }
+    if (37 in keysDown) {//Esquerda
+        hero.y -= hero.speed * modifier
+    }
+    if (39 in keysDown) {//Direita
+        hero.y += hero.speed * modifier
+    }
+}
+
+if (
+    hero.x <= (monster.x + 32) && monster.x <= (hero.x + 32) 
+    && hero.y <= (monster.y + 32) && monster.y <= (hero.y + 32)
+) {
+    ++monstersCaught
+    reset()
 }
